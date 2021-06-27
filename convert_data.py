@@ -196,7 +196,7 @@ def main():
     dataset = QataCovDataset(root_dir = args.path,split=img_list,transforms=eval_transforms)
     dataloader = DataLoader(dataset = dataset , batch_size=16)
     
-    create_original_data(args.path,args.out)
+    #create_original_data(args.path,args.out)
 
     create_predict_data(args.path,img_list,args.out,model,dataloader,device,args.img_size)
 
